@@ -1,0 +1,38 @@
+.pIntroCtn {
+  margin-top: 150px;
+  padding: var(--lp);
+  margin: 100px auto 0;
+  max-width: var(--lmax);
+}
+
+.pIntroFlex {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pIntroFlexCtn {
+  width: 25%;
+}
+.pIntroFlexCtn > :last-child {
+  color: #6a6a6a;
+}
+.pIntroTitle {
+  font-weight: 300;
+}
+.introCellTitle {
+  text-transform: uppercase;
+  color: #6a6a6a;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .pIntroFlex {
+    flex-wrap: wrap;
+  }
+
+  .pIntroFlex > * {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}

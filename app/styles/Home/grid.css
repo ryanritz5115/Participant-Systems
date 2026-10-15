@@ -1,0 +1,168 @@
+.gridCtn {
+  padding: var(--lp);
+  overflow: hidden;
+}
+.gridDiv {
+  max-width: var(--lmax);
+  margin: 0 auto;
+}
+.gridTop {
+  margin-bottom: 50px;
+}
+
+.gridTitle {
+  position: relative;
+  width: fit-content;
+  font-size: 20px;
+  font-family: "Baikal", sans-serif;
+  font-weight: 600;
+}
+
+.gridTitle::after {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 100vw;
+  height: 1px;
+  left: calc(100% + 15px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.grid.triple {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gridCell {
+  margin-bottom: 10%;
+}
+.gridLink {
+  text-decoration: none;
+}
+.gridCellImageWrapper {
+  padding-top: 20%;
+  transition: padding 0.4s var(--expo);
+}
+.gridCellImageCtn {
+  width: 100%;
+  border-radius: 5px;
+  background: grey;
+  padding-bottom: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  transition: padding 0.4s var(--expo);
+}
+.gridLink:hover .gridCellImageWrapper {
+  padding-top: 0;
+}
+.gridLink:hover .gridCellImageCtn {
+  padding-bottom: 120%;
+  background: hsla(0, 39%, 71%, 1);
+}
+
+.gridCellImage {
+  object-fit: cover;
+  transition: transform 0.6s var(--expo);
+}
+
+.gridCellSubtitle {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.gridCellSubtitle.grey {
+  color: #767676;
+}
+.gridCellSubtitle.up {
+  text-transform: uppercase;
+}
+.gridCellTitle {
+  text-decoration: underline;
+}
+.largeGridFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid.large {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+.internalGridDisc {
+  max-width: 600px;
+}
+.grid.large .gridCellTitle {
+  text-decoration: none;
+}
+.grid.large .gridCellImageWrapper,
+.grid.triple .gridCellImageWrapper {
+  padding-top: 15%;
+}
+.grid.large .gridCellImageCtn {
+  padding-bottom: 0%;
+  height: 720px;
+  border-radius: 15px;
+}
+.grid.triple .gridCellImageCtn {
+  padding-bottom: 115%;
+  border-radius: 15px;
+}
+.grid.large .gridCellImageWrapper {
+  padding-top: 0;
+}
+.grid.triple .gridLink:hover .gridCellImageWrapper {
+  padding-top: 0;
+}
+.grid.large .gridLink:hover .gridCellImageCtn {
+  padding-bottom: 0;
+}
+.grid.large .gridLink:hover img {
+  transform: scale(1.05);
+}
+.grid.triple .gridLink:hover .gridCellImageCtn {
+  padding-bottom: 130%;
+  background: hsla(0, 39%, 71%, 1);
+}
+.internalGridTop {
+  max-width: var(--mmax);
+  margin: 100px 0 20px;
+}
+.internalGridTop.proj {
+  margin-bottom: 80px;
+}
+
+.internalGridTitle {
+  margin-bottom: 40px;
+}
+.internalGridDisc p:not(:last-child) {
+  margin-bottom: 1.6em;
+}
+@media screen and (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .gridCellTitle {
+    font-size: var(--pm);
+  }
+  .grid.large .gridCellImageCtn {
+    aspect-ratio: 690/720;
+    height: auto;
+  }
+  .gridCellSubtitle {
+    font-size: var(--ps);
+  }
+  .grid.large .gridCellImageCtn {
+    border-radius: 5px;
+  }
+  .grid.large {
+    column-gap: 10px;
+  }
+  .internalGridDisc {
+    font-size: var(--pm);
+  }
+}

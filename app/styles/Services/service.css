@@ -1,0 +1,119 @@
+.serviceCtn {
+  background: #fff;
+  padding: var(--p);
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.serviceDiv {
+  margin: 0 auto;
+  max-width: var(--lmax);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceDiv > * {
+  width: 50%;
+}
+
+.serviceRight {
+  position: relative;
+  aspect-ratio: 1;
+  padding: 60px;
+}
+
+.serviceRightText {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  right: 40px;
+  top: 40px;
+}
+.serviceRightText span {
+  display: block;
+  text-align: right;
+  line-height: 1.2;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: hsla(248, 100%, 65%, 1);
+}
+.serviceRightText span:last-child {
+  font-size: 60px;
+  color: black;
+  font-weight: 300;
+  transform: translateX(10%);
+}
+
+.serviceVideo {
+  width: 100%;
+}
+
+.serviceLeft {
+  color: white;
+}
+
+.serviceTitle {
+  font-size: 60px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.serviceSubtitle {
+  font-size: 24px;
+  color: hsla(248, 100%, 65%, 1);
+  margin-bottom: 20px;
+}
+
+.servicePricing {
+  color: hsla(0, 0%, 64%, 1);
+  margin-top: 50px;
+  font-size: 14px;
+}
+.serviceDisc {
+  max-width: 600px;
+  color: black;
+  font-size: 20px;
+  margin: 70px 0;
+}
+.serviceDisc p {
+  margin-bottom: 20px;
+}
+
+.serviceItems {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.serviceItem {
+  font-size: 14px;
+  color: hsla(0, 0%, 0%, 1);
+  margin-bottom: 0.8em;
+}
+
+.serviceLink {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 20px;
+}
+.serviceTitle span {
+  /* baseline-shift: super; */
+  font-size: 16px;
+  vertical-align: super;
+  transform: translate(10px, -10px);
+  display: inline-block;
+}
+
+.serviceLink:first-of-type {
+  color: hsla(251, 88%, 87%, 1);
+}
+@media screen and (max-width: 1100px) {
+  .serviceDiv {
+    flex-direction: column-reverse;
+  }
+
+  .serviceDiv > * {
+    width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "about_values",
+  "type": "SharedSlice",
+  "name": "AboutValues",
+  "description": "AboutValues",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "values": {
+          "type": "Group",
+          "config": {
+            "label": "Values",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "gradient": {
+                "type": "Text",
+                "config": {
+                  "label": "Gradient Title",
+                  "placeholder": ""
+                }
+              },
+              "disc": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "chemical",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "asleep",
+				"type": "Text"
+			},
+			"pricing": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Occaecat voluptate fugiat magna. Enim ad pariatur magna duis enim enim exercitation. Do adipisicing exercitation sint officia tempor dolor dolor adipisicing."
+						}
+					}
+				]
+			},
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "establish",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"link": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "7fb54b70-eb80-45d6-9bd1-e14421f1e529",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://google.com",
+							"text": "still"
+						}
+					}
+				]
+			},
+			"video": {
+				"key": "e6f708b5-f426-47c6-9fcd-c56b6197b95e",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0"
+				}
+			},
+			"microtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "wheel",
+				"type": "Text"
+			},
+			"micronumber": {
+				"__TYPE__": "FieldContent",
+				"value": "club",
+				"type": "Text"
+			},
+			"disc": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Quis ullamco minim dolore culpa laboris quis est velit dolor anim."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

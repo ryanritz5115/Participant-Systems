@@ -1,0 +1,100 @@
+.nCtn {
+  padding: var(--lp) var(--p);
+}
+
+.nDiv {
+  max-width: var(--lmax);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nTop {
+  max-width: var(--lmax);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.nTopTitle {
+  font-size: 40px;
+  max-width: 600px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.nDiv > * {
+  width: 45%;
+  position: relative;
+}
+
+.nLeftImagesCtn {
+  position: sticky;
+  top: var(--hh);
+  aspect-ratio: 540/580;
+}
+
+.singleNoteImageCtn {
+  position: relative;
+  aspect-ratio: 540/580;
+  overflow: hidden;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.singleNoteImageCtn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.singleNoteImage {
+  object-fit: cover;
+}
+
+.nRight {
+  padding-top: 200px;
+  /* max-width: 470px; */
+}
+.nRightInternal {
+  max-width: 470px;
+}
+.nRight h2 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.nRightEyebrow {
+  color: grey;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.noteIntCtn {
+  padding: 80px 0;
+}
+.noteInternalSubtitle {
+  max-width: var(--lmax);
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1100px) {
+  .nDiv {
+    flex-direction: column;
+  }
+
+  .nDiv > * {
+    width: 100%;
+  }
+
+  .nLeftImagesCtn {
+    position: static;
+  }
+
+  .nRight {
+    padding-top: 50px;
+  }
+}

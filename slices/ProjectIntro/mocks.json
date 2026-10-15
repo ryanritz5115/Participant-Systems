@@ -1,0 +1,46 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "friend",
+				"type": "Text"
+			},
+			"client": {
+				"__TYPE__": "FieldContent",
+				"value": "chest",
+				"type": "Text"
+			},
+			"year": {
+				"__TYPE__": "FieldContent",
+				"value": "broad",
+				"type": "Text"
+			},
+			"services": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ipsum cupidatat esse nostrud eu laborum in ea eiusmod minim dolor consequat Lorem dolor qui. Laboris eu aliqua culpa occaecat velit ex incididunt excepteur aliqua."
+						}
+					}
+				]
+			},
+			"overview": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Pariatur Lorem nostrud reprehenderit reprehenderit."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

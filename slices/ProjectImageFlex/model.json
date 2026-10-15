@@ -1,0 +1,55 @@
+{
+  "id": "project_image_flex",
+  "type": "SharedSlice",
+  "name": "ProjectImageFlex",
+  "description": "ProjectImageFlex",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "imageone": {
+          "type": "Image",
+          "config": {
+            "label": "ImageOne",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "imagetwo": {
+          "type": "Image",
+          "config": {
+            "label": "ImageTwo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "size": {
+          "type": "Select",
+          "config": {
+            "label": "Size",
+            "placeholder": "",
+            "options": [
+              "sm",
+              "md",
+              "lg"
+            ],
+            "default_value": "sm"
+          }
+        },
+        "splitpercentage": {
+          "type": "Text",
+          "config": {
+            "label": "SplitPercentage",
+            "placeholder": "input number only (0-100)"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

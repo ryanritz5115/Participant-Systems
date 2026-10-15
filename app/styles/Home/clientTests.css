@@ -1,0 +1,140 @@
+.clientsCtn {
+  padding: var(--lp);
+  overflow: hidden;
+}
+
+.clientsDiv {
+  margin: 0 auto;
+  max-width: var(--lmax);
+  position: relative;
+  z-index: 1;
+}
+.serviceClientTitle {
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+.clientsFlex {
+  margin-top: 50px;
+  position: relative;
+}
+
+.clientInner {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.4s var(--expo);
+}
+
+.clientTest {
+  flex: 1 0 100%;
+  visibility: hidden;
+  opacity: 0;
+  max-width: var(--mmax);
+  /* margin: 0 auto; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s var(--expo);
+}
+.serviceTest {
+  left: 0 !important;
+  transform: none;
+}
+.clientTest.active {
+  opacity: 1;
+  visibility: visible;
+}
+.clientTestText {
+  margin-bottom: 30px;
+}
+.clientsAbsolute {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 11;
+}
+
+.singleClientButton {
+  --wd: 55px;
+
+  width: var(--wd);
+  height: var(--wd);
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.singleClientButton:hover {
+  opacity: 0.6;
+}
+
+.singleClientButton.active {
+  opacity: 1;
+}
+.serviceC {
+  background: hsla(251, 100%, 98%, 1);
+  position: relative;
+  padding: 150px var(--p);
+}
+.serviceC .clientTestText {
+  margin-bottom: 90px;
+}
+.serviceClientBubble {
+  position: absolute;
+  width: 50vw;
+  max-width: 1000px;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  background: hsla(0, 0%, 100%, 1);
+  top: -30%;
+  left: 0%;
+  filter: blur(111px);
+  opacity: 1;
+  z-index: 0;
+}
+@media screen and (max-width: 1100px) {
+  .clientTest {
+    width: 100%;
+  }
+
+  .clientInner {
+    margin-bottom: 50px;
+  }
+
+  .clientsAbsolute {
+    bottom: -50px;
+  }
+  .serviceC {
+    padding: 80px var(--p);
+  }
+  .serviceClientTitle {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  .serviceC .clientTestText {
+    margin-bottom: 50px;
+  }
+  .serviceC .clientsAbsolute {
+    bottom: -75px;
+  }
+  .serviceClientBubble {
+    position: absolute;
+    width: 100vw;
+    max-width: 1000px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: hsla(0, 0%, 100%, 1);
+    top: 10%;
+    left: 0%;
+    filter: blur(111px);
+    opacity: 1;
+    z-index: 0;
+  }
+}

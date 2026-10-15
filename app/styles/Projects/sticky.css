@@ -1,0 +1,58 @@
+.pStickyCtn {
+  padding: var(--lp) var(--lp) 0;
+  margin: 0 auto;
+  max-width: var(--lmax);
+}
+
+.pStickyDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pStickyDiv > * {
+  width: 50%;
+}
+.pleft {
+  padding-right: var(--lp);
+  position: sticky;
+  top: var(--hh);
+}
+
+.singleStickyLeft:not(:last-child) {
+  margin-bottom: 100px;
+}
+.stickyDisc {
+  font-size: 25px;
+}
+.ebr {
+  color: grey;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.singleStickyImage:not(:last-child) {
+  margin-bottom: var(--sp);
+}
+.singleStickyImage {
+  position: relative;
+  aspect-ratio: 630/790;
+  overflow: hidden;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1100px) {
+  .pleft {
+    position: static;
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .pStickyDiv {
+    flex-direction: column;
+  }
+
+  .pStickyDiv > * {
+    width: 100%;
+  }
+}

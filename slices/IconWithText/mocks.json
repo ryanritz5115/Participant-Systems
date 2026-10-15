@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "morning",
+				"type": "Text"
+			},
+			"disc": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sint adipisicing aliqua cupidatat minim aliquip magna amet ea qui occaecat magna et magna cupidatat elit. Cupidatat ex eu laborum."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

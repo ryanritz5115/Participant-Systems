@@ -1,0 +1,52 @@
+{
+  "id": "studio_slider",
+  "type": "SharedSlice",
+  "name": "StudioSlider",
+  "description": "StudioSlider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "slides": {
+          "type": "Group",
+          "config": {
+            "label": "Slides",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "page": {
+                "type": "Link",
+                "config": {
+                  "label": "Page",
+                  "select": "document",
+                  "repeat": false,
+                  "customtypes": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

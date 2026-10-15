@@ -1,0 +1,167 @@
+.servicesTopCtn {
+  padding: var(--p);
+  height: 100vh;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.servicesTopDiv {
+  display: flex;
+  max-width: var(--lmax);
+  margin: 0 auto;
+  height: 100%;
+  color: black;
+  position: relative;
+}
+
+.servicesTopLeft {
+  width: 50%;
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.servicesTitle {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 100px;
+}
+
+.servicesSubtitle {
+  font-size: 60px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+.servicesSubtitle span {
+  background: linear-gradient(
+    90deg,
+    #7fe094 26.92%,
+    #8d73ff 56.73%,
+    #1b008c 98.56%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.servicesDisc {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.servicesTopRight {
+  width: 50%;
+  position: relative;
+}
+
+.serviceTopImageCtn {
+  position: absolute;
+  aspect-ratio: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+.serviceTopImage {
+  object-fit: cover;
+}
+.servicesDisc p {
+  margin-bottom: 1em;
+}
+
+.serviceTopImageCtn.one {
+  width: 53%;
+  max-width: 380px;
+  top: -5%;
+}
+
+.serviceTopImageCtn.two {
+  width: 70%;
+  max-width: 470px;
+  top: 15%;
+  right: 0;
+}
+
+.serviceTopImageCtn.three {
+  width: 45%;
+  max-width: 320px;
+  top: 40%;
+  left: -0%;
+}
+
+.serviceTopImageCtn.four {
+  width: 60%;
+  max-width: 400px;
+  top: 60%;
+  left: 35%;
+}
+.servicesTopBubble {
+  position: absolute;
+  width: 90vh;
+  max-width: 1000px;
+  aspect-ratio: 1;
+  border-radius: 100vw;
+  background: hsla(228, 100%, 90%, 1);
+  top: -35%;
+  right: -5%;
+  filter: blur(200px);
+  opacity: 1;
+  z-index: 0;
+}
+.servicesTopLink {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.servicesTopLink:first-of-type {
+  color: hsla(251, 88%, 87%, 1);
+}
+
+@media screen and (max-width: 1100px) {
+  .servicesTopDiv {
+    flex-direction: column-reverse;
+  }
+
+  .servicesTopRight {
+    aspect-ratio: 1/1.5;
+    width: 100%;
+  }
+
+  .servicesTopLeft {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .servicesTopCtn {
+    height: auto;
+  }
+
+  .serviceTopImageCtn.two {
+    top: 25%;
+  }
+
+  .serviceTopImageCtn.three {
+    top: 45%;
+  }
+
+  .serviceTopImageCtn.four {
+    top: 55%;
+  }
+
+  .servicesTopBubble {
+    top: -20%;
+    right: -40%;
+    width: 150vw;
+  }
+
+  .servicesSubtitle {
+    font-size: 42px;
+  }
+
+  .servicesTitle {
+    margin-bottom: 50px;
+  }
+
+  .servicesDisc {
+    font-size: 16px;
+  }
+}

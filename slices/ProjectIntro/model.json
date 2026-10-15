@@ -1,0 +1,58 @@
+{
+  "id": "project_intro",
+  "type": "SharedSlice",
+  "name": "ProjectIntro",
+  "description": "ProjectIntro",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "client": {
+          "type": "Text",
+          "config": {
+            "label": "Client",
+            "placeholder": ""
+          }
+        },
+        "year": {
+          "type": "Text",
+          "config": {
+            "label": "Year",
+            "placeholder": ""
+          }
+        },
+        "services": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Services",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,rtl"
+          }
+        },
+        "overview": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Overview",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

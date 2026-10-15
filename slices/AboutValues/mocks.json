@@ -1,0 +1,54 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "carbon",
+				"type": "Text"
+			},
+			"values": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "nor",
+									"type": "Text"
+								}
+							],
+							[
+								"disc",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Eiusmod est reprehenderit mollit. Duis amet qui minim officia magna ipsum labore fugiat aute cillum adipisicing proident commodo."
+											}
+										}
+									]
+								}
+							],
+							[
+								"gradient",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "clothing",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
